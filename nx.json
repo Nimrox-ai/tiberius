@@ -28,5 +28,8 @@
         }
       }
     }
-  ]
+  ],
+  "projects": {
+    "nimrox-restserver": "app/nimrox-restserver"
+  }
 }
