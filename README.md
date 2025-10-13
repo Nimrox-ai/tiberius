@@ -41,6 +41,13 @@ eval "$(pyenv virtualenv-init -)"
 pyenv install 3.12.3
 ```
 
+Install Maven
+```bash
+brew install maven
+```
+
+Download and install the [Java ARM DMG](https://www.oracle.com/java/technologies/downloads/#java21:~:text=https%3A//download.oracle.com/java/21/latest/jdk%2D21_macos%2Daarch64_bin.dmg).
+
 Install node modules
 ```bash
 npm install

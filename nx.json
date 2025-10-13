@@ -29,7 +29,12 @@
       }
     }
   ],
-  "projects": {
-    "nimrox-restserver": "app/nimrox-restserver"
-  }
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "libs"
+  },
+  "projectGlobPatterns": [
+    "apps/*",
+    "libs/*"
+  ]
 }
