@@ -1,19 +1,25 @@
 {
-  "name": "nimrox-restserver",
+  "name": "falcon-iq-rest",
   "projectType": "application",
-  "root": "apps/my-java-app",
+  "root": "app/falcon-iq-rest",
   "targets": {
     "build": {
       "executor": "nx:run-commands",
       "options": {
         "command": "mvn package"
       },
-      "outputs": ["apps/nimrox-restserver/target"]
+      "outputs": ["app/falcon-iq-rest/target"]
     },
     "run": {
       "executor": "nx:run-commands",
       "options": {
         "command": "mvn exec:java"
+      }
+    },
+    "hello": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo 'hello world'"
       }
     }
   },
