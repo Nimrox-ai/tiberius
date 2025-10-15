@@ -1,15 +1,15 @@
 package com.example.domain.objects.metadata;
 
-import com.example.domain.objects.OKRStatus;
+import com.example.domain.objects.UserProfile;
 import com.example.fiq.generic.GenericBeanDescriptor;
 import com.example.fiq.generic.GenericBeanMetadata;
 import com.example.fiq.generic.GenericBeanType;
 
-public class OKRStatusBeanDescriptor implements GenericBeanDescriptor<OKRStatus> {
+public class UserProfileBeanDescriptor implements GenericBeanDescriptor<UserProfile> {
             
     @Override
     public String getMongoCollectionName() {
-        return "okr_statuses";
+        return "user_profile";
     }
 
     @Override
@@ -18,17 +18,17 @@ public class OKRStatusBeanDescriptor implements GenericBeanDescriptor<OKRStatus>
     }
 
     @Override
-    public Class<OKRStatus> getDomainObjectClazz() {
-        return OKRStatus.class;
+    public Class<UserProfile> getDomainObjectClazz() {
+        return UserProfile.class;
     }
 
     @Override
     public GenericBeanMetadata getGenericBeanMetadata() {
-        return new OKRStatusMetadata();
+        return new UserProfileMetadata();
     }
 
     @Override
     public GenericBeanType getType() {
-        return GenericBeanType.OKR_STATUS;
+        return GenericBeanType.USER_PROFILE;
     }
 }
