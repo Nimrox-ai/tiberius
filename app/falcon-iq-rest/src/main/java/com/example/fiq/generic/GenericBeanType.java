@@ -1,5 +1,5 @@
 package com.example.fiq.generic;
 
 public enum GenericBeanType {
-    OKR, OKR_STATUS
+    OKR, OKR_STATUS, USER_PROFILE
 }

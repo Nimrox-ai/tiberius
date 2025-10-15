@@ -10,16 +10,27 @@
       },
       "outputs": ["app/falcon-iq-rest/target"]
     },
-    "run": {
+    "run:dev": {
       "executor": "nx:run-commands",
+      "dependsOn": ["build:standalone"],
       "options": {
-        "command": "mvn exec:java"
+        "cwd": "app/falcon-iq-rest",
+        "command": "java -jar target/falcon-iq-rest-1.0.0-standalone.jar"
       }
     },
-    "hello": {
+    "build:standalone": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["clean"],
+      "options": {
+        "cwd": "app/falcon-iq-rest",
+        "command": "mvn package -Pstandalone -DskipTests"
+      }
+    },
+    "clean": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "echo 'hello world'"
+        "cwd": "app/falcon-iq-rest",
+        "command": "mvn clean"
       }
     }
   },

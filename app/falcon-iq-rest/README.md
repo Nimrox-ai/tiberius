@@ -47,11 +47,11 @@ java -jar /opt/homebrew/opt/jetty/libexec/start.jar &
 ```
 
 5. Access the application:
-- Base URL: http://localhost:8080/falcon-iq-rest/api/
-- Hello: http://localhost:8080/falcon-iq-rest/api/hello
-- Metadata: http://localhost:8080/falcon-iq-rest/api/generic-bean-api/metadata/OKR_STATUS
+- Base URL: http://localhost:8080/api/
+- Hello: http://localhost:8080/api/hello
+- Metadata: http://localhost:8080/api/generic-bean-api/metadata/OKR_STATUS
 
-6. Stop Jetty server:
+1. Stop Jetty server:
 ```bash
 pkill -f jetty
 ```
